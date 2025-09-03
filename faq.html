@@ -85,7 +85,7 @@
 @media (max-width: 768px) {
 
  h1.title{
-  font-size: 1.2rem;
+  font-size: 1rem;
  }
 
 }
@@ -105,6 +105,46 @@
 
 
 
+/* Ultra-wide screens (1921px and above) */
+@media (min-width: 1921px) {
+  section {
+    max-width: 2000px;     /* allow content to expand */
+    padding: 8rem 20rem;   /* more spacing */
+  }
+
+  h1.title {
+    font-size: 4rem;       /* larger heading */
+    margin-top: -3rem;
+    margin-bottom: 4rem;
+  }
+
+  .faq-item {
+    padding: 2.5rem 3rem;  /* bigger FAQ boxes */
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  }
+
+  .faq-question {
+    font-size: 1.8rem;     /* enlarge question text */
+  }
+
+  .faq-answer {
+    font-size: 1.4rem;     /* enlarge answer text */
+    line-height: 2.2rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    padding: 1.2rem 2.5rem;
+  }
+
+  /* back arrow */
+  section img[onclick] {
+    width: 60px !important;
+    height: 60px !important;
+    margin-top: 3rem;
+  }
+}
 
 
 
