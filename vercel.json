@@ -1,6 +1,6 @@
 {
     "framework": null,
-    "buildCommand": "pnpm run build",
-    "outputDirectory": ".",
+    "buildCommand": "pnpm run build && mkdir -p public && cp *.html *.css public/ && cp -r assets public/",
+    "outputDirectory": "public",
     "installCommand": "pnpm install"
 }
