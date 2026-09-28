@@ -1,80 +1,79 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
-  <link href="./output.css" rel="stylesheet">
+<!-- site:head -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&amp;family=Zen+Dots&amp;display=swap" rel="stylesheet">
+<link href="./output.css" rel="stylesheet">
+<!-- /site:head -->
+
   <title>G.NOVA ARENA</title>
 </head>
 
-<body
-  class="bg-black bg-gradient-to-r from-[#000000] from-30% to-[#1D5F00] bg-fixed bg-cover font-['Zen_Dots',_sans-serif]">
+<body>
 
-  <nav class=" w-full top-0 z-50 bg-white/0 fixed backdrop-blur-lg text-white py-2">
-    <div class="container mx-auto 2xl:max-w-[95%] px-4 flex justify-between items-center">
-
-      <a href="#home" class="flex items-center space-x-3">
-        <img src="assets/G.NOVA_ARENA.png" alt="G.NOVA ARENA Logo" class="h-15 w-auto">
-
+  <!-- site:header -->
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container nav-bar">
+      <a href="#home" aria-current="page" class="brand-link" aria-label="G. NOVA ARENA home">
+        <img src="assets/brand-mark.webp" alt="G. NOVA ARENA" width="640" height="219" fetchpriority="high" decoding="async">
       </a>
-
-      <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
-        <a href="#home"
-          class="nav-link relative hover:text-[#4DFF00] transition-colors after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[2px] after:bottom-[-2px] after:left-0 after:bg-[#4DFF00] after:origin-bottom-right after:transition-transform after:duration-250 after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left">Home</a>
-        <a href="teams.html"
-          class="nav-link relative hover:text-[#4DFF00] transition-colors after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[2px] after:bottom-[-2px] after:left-0 after:bg-[#4DFF00] after:origin-bottom-right after:transition-transform after:duration-250 after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left">Teams</a>
-        <a href="events.html"
-          class="nav-link relative hover:text-[#4DFF00] transition-colors after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[2px] after:bottom-[-2px] after:left-0 after:bg-[#4DFF00] after:origin-bottom-right after:transition-transform after:duration-250 after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left">Events</a>
-
-        
-        <a href="#footer"
-          class="nav-link relative hover:text-[#4DFF00] transition-colors after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[2px] after:bottom-[-2px] after:left-0 after:bg-[#4DFF00] after:origin-bottom-right after:transition-transform after:duration-250 after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left">Contact
-          Us</a>
+      <div class="desktop-nav">
+        <a href="#home" aria-current="page" class="nav-link">Home</a>
+        <a href="teams.html" class="nav-link">Teams</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="#footer" class="nav-link">Contact Us</a>
       </div>
-
-      <div class="md:hidden">
-        <button id="mobile-menu-button" class="focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </button>
-      </div>
+      <button id="mobile-menu-button" class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
+        <svg class="menu-icon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <svg class="close-icon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 6 12 12M6 18 18 6"></path>
+        </svg>
+      </button>
     </div>
-
-    <div id="mobile-menu" class="hidden md:hidden pt-4 pb-2">
-      <a href="#home" class="block text-center py-2 px-4 transition-colors rounded">Home</a>
-      <a href="teams.html" class="block text-center py-2 px-4  transition-colors rounded">Teams</a>
-      <a href="events.html" class="block text-center py-2 px-4 transition-colors rounded">Events</a>
-     
-      <a href="#footer" class="block text-center py-2 px-4 transition-colors rounded">Contact Us</a>
+    <div id="mobile-menu" class="hidden">
+      <div class="container mobile-nav">
+        <a href="#home" aria-current="page" class="nav-link">Home</a>
+        <a href="teams.html" class="nav-link">Teams</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="#footer" class="nav-link">Contact Us</a>
+      </div>
     </div>
   </nav>
+</header>
+<!-- /site:header -->
+
+    <main id="main-content" tabindex="-1">
 
   <section id="home" class="relative min-h-screen flex flex-col justify-center overflow-hidden">
     <div
-      class="container mx-auto 2xl:max-w-[95%] flex flex-col md:flex-row items-center justify-center flex-grow pb-24 2xl:pb-40">
-      <div class="md:w-1/2 text-center">
-        <img src="assets/G.NOVA_ARENA1.png" alt="G.NOVA ARENA Logo"
-          class="mx-auto w-4/5 sm:w-3/4 md:w-full max-w-md 2xl:max-w-2xl">
+      class="hero-layout container mx-auto">
+      <div class="hero-art">
+        <img width="1200" height="654" src="assets/brand-lockup.webp" fetchpriority="high" decoding="async" alt="G.NOVA ARENA Logo"
+          class="hero-brand">
       </div>
 
-      <div class="md:w-1/2 md:pl-8 text-white text-center md:text-left">
+      <div class="hero-copy">
 
-        <h1 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-bold mb-4">Welcome to </h1>
-        <h1 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-bold mb-4">G. NOVA ARENA</h1>
-        <p class="text-sm sm:text-base 2xl:text-xl font-normal mb-10 px-4 md:px-0">G. NOVA ARENA is a hybrid gaming and
+        <h1 class="hero-title font-bold mb-6"><span>Welcome to</span><span class="arena-name">G. NOVA ARENA</span></h1>
+        <p class="hero-description">G. NOVA ARENA is a hybrid gaming and
           sports
           community that organises competitive online tournaments and offline events across football, basketball,
           cricket, and more. We bring together digital gamers and field athletes under one arena, fostering skill,
           sportsmanship, and community engagement.</p>
 
-        <div class="mt-8 text-center">
+        <div class="hero-actions">
           <a href="events.html"
-            class="bg-transparent border border-[#4DFF00] text-white font-bold py-2 px-6 rounded-full hover:bg-[#4DFF00] hover:text-black transition-all duration-300 ease-in-out">
+            class="button">
             Events
           </a>
         </div>
@@ -82,126 +81,93 @@
     </div>
 
     <!-- Marquee Section (Absolute Bottom) -->
-    <style>
-      @keyframes infinite-scroll {
-        0% {
-          transform: translateX(0);
-        }
 
-        100% {
-          transform: translateX(-50%);
-        }
-      }
-
-      .animate-infinite-scroll {
-        animation: infinite-scroll 40s linear infinite;
-        width: max-content;
-      }
-    </style>
-
-    <div class="absolute bottom-0 left-0 w-full overflow-hidden bg-black border-y border-[#4DFF00] py-4 z-20">
-      <div class="flex flex-row whitespace-nowrap animate-infinite-scroll will-change-transform">
+    <div class="arena-ticker" role="region" aria-label="Upcoming football and Valorant tournaments, coming soon">
+      <div class="ticker-track animate-infinite-scroll" aria-hidden="true">
         <!-- Content Set 1 -->
         <div class="flex flex-row items-center gap-16 px-8">
-          <span class="text-[#4DFF00] font-['Zen_Dots',_sans-serif] text-xl md:text-2xl tracking-widest">Football
+          <span class="ticker-label">Football
             Tournament ( Coming Soon !! )</span>
-          <span class="text-white text-xl md:text-2xl">•</span>
-          <span class="text-[#4DFF00] font-['Zen_Dots',_sans-serif] text-xl md:text-2xl tracking-widest">Valorant
+          <span class="text-white">•</span>
+          <span class="ticker-label">Valorant
             Tournament ( Coming Soon !! )</span>
-          <span class="text-white text-xl md:text-2xl">•</span>
-          <span class="text-[#4DFF00] font-['Zen_Dots',_sans-serif] text-xl md:text-2xl tracking-widest">Football
+          <span class="text-white">•</span>
+          <span class="ticker-label">Football
             Tournament ( Coming Soon !! )</span>
-          <span class="text-white text-xl md:text-2xl">•</span>
-          <span class="text-[#4DFF00] font-['Zen_Dots',_sans-serif] text-xl md:text-2xl tracking-widest">Valorant
+          <span class="text-white">•</span>
+          <span class="ticker-label">Valorant
             Tournament ( Coming Soon !! )</span>
-          <span class="text-white text-xl md:text-2xl">•</span>
+          <span class="text-white">•</span>
         </div>
 
         <!-- Content Set 2 (Duplicate for loop) -->
         <div class="flex flex-row items-center gap-16 px-8" aria-hidden="true">
-          <span class="text-[#4DFF00] font-['Zen_Dots',_sans-serif] text-xl md:text-2xl tracking-widest">Football
+          <span class="ticker-label">Football
             Tournament ( Coming Soon !! )</span>
-          <span class="text-white text-xl md:text-2xl">•</span>
-          <span class="text-[#4DFF00] font-['Zen_Dots',_sans-serif] text-xl md:text-2xl tracking-widest">Valorant
+          <span class="text-white">•</span>
+          <span class="ticker-label">Valorant
             Tournament ( Coming Soon !! )</span>
-          <span class="text-white text-xl md:text-2xl">•</span>
-          <span class="text-[#4DFF00] font-['Zen_Dots',_sans-serif] text-xl md:text-2xl tracking-widest">Football
+          <span class="text-white">•</span>
+          <span class="ticker-label">Football
             Tournament ( Coming Soon !! )</span>
-          <span class="text-white text-xl md:text-2xl">•</span>
-          <span class="text-[#4DFF00] font-['Zen_Dots',_sans-serif] text-xl md:text-2xl tracking-widest">Valorant
+          <span class="text-white">•</span>
+          <span class="ticker-label">Valorant
             Tournament ( Coming Soon !! )</span>
-          <span class="text-white text-xl md:text-2xl">•</span>
+          <span class="text-white">•</span>
         </div>
       </div>
     </div>
   </section>
 
+  <section id="online-arena" class="content-section relative z-10">
+    <div class="container">
 
+      <div class="feature-row">
 
+        <div class="feature-copy">
+          <h2>Online Arena</h2>
 
-
-
-
-
-
-
-
-
-
-
-  <section id="about" class="py-16 relative z-10">
-    <div class="container mx-auto 2xl:max-w-[95%] px-4">
-
-      <div class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
-
-        <div class="w-full md:w-1/2 text-white text-center md:text-left">
-
-          <p class="text-sm sm:text-base 2xl:text-xl text-gray-300 leading-relaxed font-['Zen_Dots',_sans-serif]">
+          <p class="text-gray-300">
             Step into the virtual arena with G. NOVA ARENA. We organize competitive online tournaments designed to test
             your reflexes and strategy. Whether you are a casual player or a pro fragger, join our community to compete
             for glory, rewards, and the top spot on the leaderboard.
           </p>
         </div>
 
-        <div class="w-full md:w-1/2 mt-8 md:mt-0">
+        <div class="feature-media">
           <div class="relative group">
             
             <div class="relative rounded-xl overflow-hidden">
-              <img src="assets/gamingboy.png" alt="About Section Image" class="w-full h-auto object-cover">
+              <img width="1600" height="1600" src="assets/gamingboy.webp" loading="lazy" decoding="async" alt="Gamer seated in the online arena" class="feature-art">
             </div>
           </div>
         </div>
 
       </div>
-      <hr class="border-white">
+      <hr class="section-divider">
     </div>
       
   </section>
 
-
-
-
-
-
-  <section id="about" class="py-16 relative z-10">
+  <section id="offline-arena" class="content-section relative z-10">
    
-    <div class="container mx-auto 2xl:max-w-[95%] px-4">
+    <div class="container">
 
-      <div class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
+      <div class="feature-row">
 
-        <div class="w-full md:w-1/2 mb-8 md:mb-0">
+        <div class="feature-media">
           <div class="relative group">
-            
 
             <div class="relative rounded-xl overflow-hidden">
-              <img src="assets/sportsboy.png" alt="About Section Image" class="w-full h-auto object-cover">
+              <img width="1600" height="1600" src="assets/sportsboy.webp" loading="lazy" decoding="async" alt="Football player balancing a ball" class="feature-art">
             </div>
           </div>
         </div>
 
-        <div class="w-full md:w-1/2 text-white text-center md:text-left">
+        <div class="feature-copy">
+          <h2>Offline Arena</h2>
 
-          <p class="text-sm sm:text-base 2xl:text-xl text-gray-300 leading-relaxed font-['Zen_Dots',_sans-serif]">
+          <p class="text-gray-300">
             We bring the game to life beyond the screen. Our offline events foster the spirit of traditional
             sportsmanship through organized tournaments in football, basketball, cricket, and more. It's about grit,
             passion, and the energy of competing face-to-face in a real arena.
@@ -209,308 +175,209 @@
         </div>
 
       </div>
-      <hr class="border-white">
+      <hr class="section-divider">
     </div>
   </section>
 
+  <section id="about-video" class="content-section relative z-10">
+    <div class="container">
 
+      <div class="feature-row">
 
-
-  <section id="about-video" class="py-16 relative z-10">
-    <div class="container mx-auto 2xl:max-w-[95%] px-4">
-
-      <div class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
-
-        <div class="w-full md:w-1/2 text-white text-center md:text-left">
-          <h2 class="text-3xl sm:text-4xl 2xl:text-5xl font-bold mb-6">
+        <div class="feature-copy">
+          <h2 class="font-bold mb-6">
             Experience The Arena
           </h2>
-          <p class="text-sm sm:text-base 2xl:text-xl text-gray-300 leading-relaxed font-sans">
+          <p class="text-gray-300">
             Immerse yourself in the action at G. NOVA ARENA. From intense online standoffs to adrenaline-pumping field
             sports, we are redefining the competitive landscape. Watch the highlights and see what it means to be part
             of our hybrid community.
           </p>
         </div>
 
-        <div class="w-full md:w-1/2 mt-8 md:mt-0">
+        <div class="feature-media">
           <div class="relative group">
-            
 
-            <div class="relative rounded-xl overflow-hidden aspect-video">
+            <div class="video-frame">
   <iframe
     class="w-full h-full"
     src="https://www.youtube.com/embed/hSeRmNAXhQY?autoplay=1&mute=1&loop=1&playlist=hSeRmNAXhQY&playsinline=1&rel=0"
     title="Experience The Arena"
-    frameborder="0"
+    loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
     allow="autoplay; encrypted-media; picture-in-picture"
     allowfullscreen>
   </iframe>
 </div>
 
-
-
-
-
           </div>   
         </div>      
       </div>
-    <hr class="border-white mt-30">
+    <hr class="section-divider">
     </div>
 
   </section>
 
+<section id="novaxi" class="content-section relative z-10">
+    <div class="container">
 
+      <div class="feature-row">
 
-
-
-
-
-
-<section id="novaxi" class="py-16 relative z-10">
-    <div class="container mx-auto 2xl:max-w-[95%] px-4">
-
-      <div class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
-
-        <div class="w-full md:w-1/2 mt-8 md:mt-0">
+        <div class="feature-media">
           <div class="relative group">
-            
 
-
-           <div class="relative rounded-xl overflow-hidden aspect-video">
+           <div class="video-frame">
   <iframe
     class="w-full h-full"
     src="https://www.youtube.com/embed/qbnGBJB-3Ps?autoplay=1&mute=1&loop=1&playlist=qbnGBJB-3Ps&playsinline=1&rel=0"
     title="Nova XI"
-    frameborder="0"
+    loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
     allow="autoplay; encrypted-media; picture-in-picture"
     allowfullscreen>
   </iframe>
 </div> 
-            
-            
-
-
 
           </div>   
         </div>
 
-        <div class="w-full md:w-1/2 text-white text-center md:text-left">
-          <h2 class="text-3xl sm:text-4xl 2xl:text-5xl font-bold mb-6">
-           <span class="text-[#1c5f00]">NOVA</span> <span class="text-[#4DFF00]">XI</span>
+        <div class="feature-copy">
+          <h2 class="font-bold mb-6">
+           <span class="text-[#b4ff94]">NOVA</span> <span class="text-[#4DFF00]">XI</span>
           </h2>
-          <p class="text-sm sm:text-base 2xl:text-xl text-gray-300 leading-relaxed font-sans">
+          <p class="text-gray-300">
             NOVA XI is the offline football division of G. NOVA ARENA, dedicated to organising competitive grassroots football tournaments and events. We bring players and teams together to compete, build sportsmanship, and strengthen the football community through the spirit of the game.
           </p>
         </div>
       </div>
-    <hr class="border-white mt-30">
+    <hr class="section-divider">
     </div>
 
   </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <section id="faq" class="py-16">
+  <section id="faq" class="content-section">
    
-    <div class="container mx-auto 2xl:max-w-[95%] px-4">
+    <div class="container">
 
-      <h2 class="text-3xl sm:text-4xl font-bold text-center text-white mb-12">
+      <h2 class="font-bold text-center text-white mb-12">
         F.A.Q
           
       </h2>
 
-      <div class="max-w-3xl mx-auto space-y-4">
+      <div class="faq-list">
 
-
-
-
-
-        <details class="group rounded-lg bg-black/40 open:bg-black/60 transition-all duration-300">
-          <summary class="flex justify-between items-center cursor-pointer p-4 md:p-6 list-none">
-            <span class="text-white group-hover:text-[#4DFF00] transition-colors text-sm md:text-base">
+        <details class="faq-item">
+          <summary>
+            <span class="faq-question">
               What is G. NOVA ARENA?
             </span>
-            <span class="text-[#4DFF00] transform group-open:rotate-180 transition-transform duration-300">
+            <span class="faq-chevron" aria-hidden="true">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </span>
           </summary>
-          <div class="px-4 md:px-6 pb-6 text-gray-400 text-xs md:text-sm font-sans leading-relaxed">
+          <div class="faq-answer">
             G. NOVA ARENA is a hybrid gaming and sports community that organises online gaming tournaments and offline
             sports events like football, cricket, basketball, and more.
           </div>
         </details>
 
-
-
-
-
-
-
-
-
-        <details class="group rounded-lg bg-black/40 open:bg-black/60 transition-all duration-300">
-          <summary class="flex justify-between items-center cursor-pointer p-4 md:p-6 list-none">
-            <span class="text-white group-hover:text-[#4DFF00] transition-colors text-sm md:text-base">
+        <details class="faq-item">
+          <summary>
+            <span class="faq-question">
               Who can participate in your events?
             </span>
-            <span class="text-[#4DFF00] transform group-open:rotate-180 transition-transform duration-300">
+            <span class="faq-chevron" aria-hidden="true">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </span>
           </summary>
-          <div class="px-4 md:px-6 pb-6 text-gray-400 text-xs md:text-sm font-sans leading-relaxed">
+          <div class="faq-answer">
             Anyone can register and participate in our events. We welcome gamers and athletes of all
             skill levels, from beginners to professionals.
           </div>
         </details>
 
-
-
-
-       
-
-
-
-
-
-
-
-
-        <details class="group rounded-lg bg-black/40 open:bg-black/60 transition-all duration-300">
-          <summary class="flex justify-between items-center cursor-pointer p-4 md:p-6 list-none">
-            <span class="text-white group-hover:text-[#4DFF00] transition-colors text-sm md:text-base">
+        <details class="faq-item">
+          <summary>
+            <span class="faq-question">
               Are the events online or offline?
             </span>
-            <span class="text-[#4DFF00] transform group-open:rotate-180 transition-transform duration-300">
+            <span class="faq-chevron" aria-hidden="true">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </span>
           </summary>
-          <div class="px-4 md:px-6 pb-6 text-gray-400 text-xs md:text-sm font-sans leading-relaxed">
+          <div class="faq-answer">
             G. NOVA ARENA is a hybrid community. We organize both competitive online tournaments for digital gamers and
             offline events for field athletes (football, cricket, etc.). Check specific event details for location info.
           </div>
         </details>
 
-
-
-
-
-
-
-
-
-
-        <details class="group  rounded-lg bg-black/40 open:bg-black/60 transition-all duration-300">
-          <summary class="flex justify-between items-center cursor-pointer p-4 md:p-6 list-none">
-            <span class="text-white group-hover:text-[#4DFF00] transition-colors text-sm md:text-base">
+        <details class="faq-item">
+          <summary>
+            <span class="faq-question">
               Is there an entry fee?
             </span>
-            <span class="text-[#4DFF00] transform group-open:rotate-180 transition-transform duration-300">
+            <span class="faq-chevron" aria-hidden="true">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </span>
           </summary>
-          <div class="px-4 md:px-6 pb-6 text-gray-400 text-xs md:text-sm font-sans leading-relaxed">
+          <div class="faq-answer">
             Entry fees vary by tournament. Some community events are free to play, while major tournaments with cash
             prizes may require a registration fee. All details are listed on the individual event cards.
           </div>
         </details>
 
-
-
-
-
-
-
-
-        <details class="group  rounded-lg bg-black/40 open:bg-black/60 transition-all duration-300">
-          <summary class="flex justify-between items-center cursor-pointer p-4 md:p-6 list-none">
-            <span class="text-white group-hover:text-[#4DFF00] transition-colors text-sm md:text-base">
+        <details class="faq-item">
+          <summary>
+            <span class="faq-question">
               Do I need to create an account to join events?
             </span>
-            <span class="text-[#4DFF00] transform group-open:rotate-180 transition-transform duration-300">
+            <span class="faq-chevron" aria-hidden="true">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </span>
           </summary>
-          <div class="px-4 md:px-6 pb-6 text-gray-400 text-xs md:text-sm font-sans leading-relaxed">
+          <div class="faq-answer">
             No. Our website is partially static and does not support user account creation. All registrations are
             handled through Google Forms.
           </div>
         </details>
 
-
-
-
-
-
-
-
-        <details class="group  rounded-lg bg-black/40 open:bg-black/60 transition-all duration-300">
-          <summary class="flex justify-between items-center cursor-pointer p-4 md:p-6 list-none">
-            <span class="text-white group-hover:text-[#4DFF00] transition-colors text-sm md:text-base">
+        <details class="faq-item">
+          <summary>
+            <span class="faq-question">
               What information do I need to provide while registering?
             </span>
-            <span class="text-[#4DFF00] transform group-open:rotate-180 transition-transform duration-300">
+            <span class="faq-chevron" aria-hidden="true">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </span>
           </summary>
-          <div class="px-4 md:px-6 pb-6 text-gray-400 text-xs md:text-sm font-sans leading-relaxed">
+          <div class="faq-answer">
             You'll need to enter your name, age, gender, email, phone number or WhatsApp number, and upload your payment
             proof.
           </div>
         </details>
 
-
-
-
-       
-
-
-
-
-
-
-
-
-        <details class="group rounded-lg bg-black/40 open:bg-black/60 transition-all duration-300">
-          <summary class="flex justify-between items-center cursor-pointer p-4 md:p-6 list-none">
-            <span class="text-white group-hover:text-[#4DFF00] transition-colors text-sm md:text-base">
+        <details class="faq-item">
+          <summary>
+            <span class="faq-question">
               How can I contact support?
             </span>
-            <span class="text-[#4DFF00] transform group-open:rotate-180 transition-transform duration-300">
+            <span class="faq-chevron" aria-hidden="true">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </span>
           </summary>
-          <div class="px-4 md:px-6 pb-6 text-gray-400 text-xs md:text-sm font-sans leading-relaxed">
+          <div class="faq-answer">
             You can reach us via email at <a href="mailto:contact@gnovaarena.in"
               class="text-[#4DFF00] hover:underline">contact@gnovaarena.in</a> or join our <a
               href="https://discord.gg/NGn4vPzpw9" class="text-[#4DFF00] hover:underline">Discord server</a> for
@@ -518,195 +385,106 @@
           </div>
         </details>
 
-
-
-
-
-
-
-
-
-
-
-
       </div>
     </div>
   </section>
 
+      </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <footer id="footer" class="bg-transparent text-gray-400 font-['Zen_Dots',_sans-serif]">
-    <div class="container mx-auto 2xl:max-w-[95%] px-6 py-12">
-
-      <div class="flex flex-col sm:flex-row justify-between items-center pb-8">
-        <div class="mb-6 sm:mb-0">
-          <a href="#">
-            <img src="assets/G.NOVA_ARENA.png" alt="G.NOVA ARENA Logo" class="h-10 transform translate-y-8">
-          </a>
-
-
-        </div>
-
-      </div>
-
-      <hr class="border-white">
-
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 py-12 text-center md:text-left">
+    <!-- site:footer -->
+<footer id="footer" class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-brand">
         <div>
-          <h3 class="text-white text-sm font-semibold mb-4">CONTACT US</h3>
-          <p class="mb-2 text-xs">Bhadreswar, Hooghly, West Bengal, India, 712-124</p>
-
-          <a href="mailto:contact@gnovaarena.in"
-            class="block hover:text-white transition-colors text-xs duration-300">contact@gnovaarena.in</a>
+          <a href="index.html" aria-current="page" class="brand-link" aria-label="G. NOVA ARENA home">
+            <img src="assets/brand-mark.webp" alt="G. NOVA ARENA" width="640" height="219" decoding="async">
+          </a>
         </div>
-
-        <div class="md:col-span-1">
-          <h3 class="text-white text-sm font-semibold mb-4">QUICK CONTACT</h3>
+      </div>
+      <hr class="section-divider">
+      <div class="footer-grid">
+        <div>
+          <h3>CONTACT US</h3>
+          <p>Bhadreswar, Hooghly, West Bengal, India, 712-124</p>
+          <a href="mailto:contact@gnovaarena.in"
+            class="footer-email">contact@gnovaarena.in</a>
+        </div>
+        <div>
+          <h3>QUICK CONTACT</h3>
           <ul>
-            <li class="mb-2">
+            <li>
               <a href="https://wa.me/917980517312" target="_blank" rel="noopener noreferrer"
-                class="flex items-center justify-center md:justify-start hover:text-white transition-colors duration-300">
-                <img src="assets/wp.png" alt="WhatsApp" class="h-5 w-5 mr-3">
-                <span class="text-xs">+91 7980 517312</span>
+                class="contact-link">
+                <img src="assets/wp.png" alt="WhatsApp" width="24" height="24" decoding="async">
+                <span>+91 7980 517312</span>
               </a>
             </li>
-            <li class="mb-2">
+            <li>
               <a href="https://t.me/+917980517312" target="_blank" rel="noopener noreferrer"
-                class="flex items-center justify-center md:justify-start hover:text-white transition-colors duration-300">
-                <img src="assets/telegram.png" alt="Telegram" class="h-5 w-5 mr-3">
-                <span class="text-xs">+91 7980 517312</span>
+                class="contact-link">
+                <img src="assets/telegram.png" alt="Telegram" width="24" height="24" decoding="async">
+                <span>+91 7980 517312</span>
               </a>
             </li>
           </ul>
         </div>
-
-
-        <div class="md:col-span-1">
-          <h3 class="text-white text-sm font-semibold mb-4">ORGANIZATION</h3>
+        <div>
+          <h3>ORGANIZATION</h3>
           <ul>
-            <li class="mb-2"><a href="terms.html" class="text-xs hover:text-white transition-colors duration-300">Terms
+            <li><a href="terms.html">Terms
                 and Conditions</a></li>
-            <li class="mb-2"><a href="privacy.html"
-                class="text-xs hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-            <li class="mb-2"><a href="disclaimer.html"
-                class="text-xs hover:text-white transition-colors duration-300">Disclaimer</a></li>
-            <li class="mb-2"><a href="refund.html"
-                class="text-xs hover:text-white transition-colors duration-300">Refund/Cancellation Policy</a></li>
-            <li class="mb-2"><a href="conduct.html" class="text-xs hover:text-white transition-colors duration-300">Code
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="refund.html">Refund/Cancellation Policy</a></li>
+            <li><a href="conduct.html">Code
                 of Conduct</a></li>
           </ul>
         </div>
-
-
-
         <div>
-          <h3 class="text-white text-sm font-semibold mb-4">SOCIALS</h3>
-          <div class="flex justify-center md:justify-start space-x-4">
-
-
-            <a href="https://www.instagram.com/g.novaarena/?utm_source=ig_web_button_share_sheet" target="_blank"
-              class="hover:opacity-75 transition-opacity duration-300">
-              <img src="assets/instagram.png" alt="Instagram" class="h-5 w-5">
+          <h3>SOCIALS</h3>
+          <div class="social-links">
+            <a href="https://www.instagram.com/g.novaarena/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer"
+              class="icon-link">
+              <img src="assets/instagram.png" alt="Instagram" width="24" height="24" decoding="async">
             </a>
-
-            <a href="https://www.linkedin.com/company/gnovaarena/" target="_blank"
-              class="hover:opacity-75 transition-opacity duration-300">
-              <img src="assets/linkedin.png" alt="LinkedIn" class="h-5 w-5">
+            <a href="https://www.linkedin.com/company/gnovaarena/" target="_blank" rel="noopener noreferrer"
+              class="icon-link">
+              <img src="assets/linkedin.png" alt="LinkedIn" width="24" height="24" decoding="async">
             </a>
-
-
-            <a href="https://youtube.com/@g.novaarena?si=4Sr3jU4FtfjM6qt2" target="_blank"
-              class="hover:opacity-75 transition-opacity duration-300">
-              <img src="assets/youtube.png" alt="YouTube" class="h-5 w-5">
+            <a href="https://youtube.com/@g.novaarena?si=4Sr3jU4FtfjM6qt2" target="_blank" rel="noopener noreferrer"
+              class="icon-link">
+              <img src="assets/youtube.png" alt="YouTube" width="24" height="24" decoding="async">
             </a>
-
-
-            <a href="https://x.com/gnovaarena?s=21&t=_wX8kYIrkqsRGxGt5Y2UAg" target="_blank"
-              class="hover:opacity-75 transition-opacity duration-300">
-              <img src="assets/twitter.png" alt="Twitter" class="h-5 w-5">
+            <a href="https://x.com/gnovaarena?s=21&t=_wX8kYIrkqsRGxGt5Y2UAg" target="_blank" rel="noopener noreferrer"
+              class="icon-link">
+              <img src="assets/twitter.png" alt="Twitter" width="24" height="24" decoding="async">
             </a>
-
-
- <a href="https://chat.whatsapp.com/Jr1RPhBswi29LIhfR3Roy8?mode=ac_c" target="_blank"
-              class="hover:opacity-75 transition-opacity duration-300">
-              <img src="assets/wp.png" alt="WhatsApp" class="h-5 w-5">
+ <a href="https://chat.whatsapp.com/Jr1RPhBswi29LIhfR3Roy8?mode=ac_c" target="_blank" rel="noopener noreferrer"
+              class="icon-link">
+              <img src="assets/wp.png" alt="WhatsApp" width="24" height="24" decoding="async">
             </a>
-
-
-<a href="https://www.facebook.com/share/1UE3PzBA6N/?mibextid=wwXIfr" target="_blank"
-              class="hover:opacity-75 transition-opacity duration-300">
-              <img src="assets/facebook.png" alt="Facebook" class="h-5 w-5">
+<a href="https://www.facebook.com/share/1UE3PzBA6N/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"
+              class="icon-link">
+              <img src="assets/facebook.png" alt="Facebook" width="24" height="24" decoding="async">
             </a>
-
-            <a href="https://discord.gg/NGn4vPzpw9" target="_blank"
-              class="hover:opacity-75 transition-opacity duration-300">
-              <img src="assets/discord.png" alt="Discord" class="h-5 w-5">
+            <a href="https://discord.gg/NGn4vPzpw9" target="_blank" rel="noopener noreferrer"
+              class="icon-link">
+              <img src="assets/discord.png" alt="Discord" width="24" height="24" decoding="async">
             </a>
-
-
-
-
-
-
           </div>
         </div>
-
-
-
-
-
-
-
-    
-
-
-      
-
-
-
-
-
-
-
-
-
-
       </div>
-
-      <hr class="border-white">
-
-      <div class="flex flex-col sm:flex-row justify-between items-center pt-8">
-        <p class="text-xs mb-4 sm:mb-0">&copy; 2025 G. NOVA ARENA. All Rights Reserved.</p>
-
+      <hr class="section-divider">
+      <div class="footer-copyright">
+        <p>&copy; <span data-current-year>2026</span> G. NOVA ARENA. All Rights Reserved.</p>
       </div>
-
     </div>
   </footer>
+<!-- /site:footer -->
 
 
 
-  <script>
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    mobileMenuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
+  <script src="./site.js" defer></script>
 
 </body>
 
