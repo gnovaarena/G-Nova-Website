@@ -11,4 +11,4 @@ Serve the root directory using `pnpm run serve` in another terminal. Run `pnpm r
 
 Responsive layout repairs are appended to `input.css`. They adjust narrow-screen gutters, text reflow, footer columns, social icon wrapping, and section spacing without introducing a different visual design. The page markup retains the original utility classes. `site.js` adds menu dismissal on outside click, link selection, Escape, focus leaving navigation, and desktop resizing.
 
-Only referenced assets are kept in `assets/`. The original images are restored to preserve their proportions and appearance. Vercel copies the generated HTML/CSS, menu script, and assets into `public/`.
+Only referenced assets are kept in `assets/`. Images use lossless WebP with the original dimensions, full canvas, transparency, and exact decoded RGBA pixels. Conversion changes only the asset files and their references; the UI styles and animations stay unchanged. Vercel copies the generated HTML/CSS, menu script, and assets into `public/`.
