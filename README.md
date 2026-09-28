@@ -1,37 +1,14 @@
 # G. NOVA ARENA
 
-Static, responsive site for the gaming and sports community.
-
-## Development
+Static website using the UI from the supplied original codebase: Zen Dots typography, transparent blurred navigation, original images, footer, cards, colors, hover effects, marquee, and prize animations.
 
 ```sh
 pnpm install
 pnpm run dev
 ```
 
-`dev` syncs the shared HTML components and watches `input.css`. Serve the root directory using `pnpm run serve` in another terminal.
+Serve the root directory using `pnpm run serve` in another terminal. Run `pnpm run build` to generate `output.css`.
 
-## Shared design system
+Responsive layout repairs are appended to `input.css`. They adjust narrow-screen gutters, text reflow, footer columns, social icon wrapping, and section spacing without introducing a different visual design. The page markup retains the original utility classes. `site.js` adds menu dismissal on outside click, link selection, Escape, focus leaving navigation, and desktop resizing.
 
-- `components/head.html`: shared fonts, viewport settings, and stylesheet.
-- `components/header.html`: navigation and mobile menu.
-- `components/footer.html`: contact information, organization links, and socials.
-- `input.css`: color, typography, spacing, component styles, and responsive rules.
-- `site.js`: mobile menu dismissal, accessible menu state, and copyright year.
-
-Edit shared HTML in `components/`, then run `pnpm run sync:layout`. The build also syncs these files into all eight pages and adds the appropriate current-page state. Generated blocks are marked `site:head`, `site:header`, and `site:footer`; edit page-specific content outside those blocks.
-
-Zen Dots is the display face; Rajdhani is the body face. Fluid sizes are capped on large displays. Team and footer columns use container queries, so they respond to their available space and enlarged text. Navigation changes at 768px, and home feature rows change at 1024px. Content remains in normal document flow, with short-page footers at the viewport bottom.
-
-The assets directory contains only images used by the site: optimized WebP artwork and portraits, plus PNG social icons. Unused originals and duplicate assets have been removed. Image dimensions reserve layout space; below-the-fold artwork and videos load lazily.
-
-## Build and verification
-
-```sh
-pnpm run build
-pnpm run check:layout
-```
-
-Vercel builds and copies the generated HTML/CSS, `site.js`, and assets into `public/`.
-
-Responsive browser checks cover all eight pages from 280px to 7680px, breakpoint edges, portrait and landscape layouts, and 200% text enlargement. Interaction checks cover outside-click dismissal, menu toggling and resizing, Escape, keyboard focus, FAQ disclosure, disabled tournament controls, and reduced motion. Embedded video dimensions are checked; third-party video playback is not part of the layout checks.
+Only referenced assets are kept in `assets/`. The original images are restored to preserve their proportions and appearance. Vercel copies the generated HTML/CSS, menu script, and assets into `public/`.

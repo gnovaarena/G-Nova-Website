@@ -1,217 +1,272 @@
 <!doctype html>
-<html lang="en">
+<html>
 
 <head>
-<!-- site:head -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#000000">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&amp;family=Zen+Dots&amp;display=swap" rel="stylesheet">
-<link href="./output.css" rel="stylesheet">
-<!-- /site:head -->
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
     <title>Teams - G.NOVA ARENA</title>
 </head>
 
-<body>
+<body
+    class="bg-black bg-gradient-to-r from-[#000000] from-30% to-[#1D5F00] bg-fixed bg-cover font-['Zen_Dots',_sans-serif]">
 
-    <!-- site:header -->
-<a class="skip-link" href="#main-content">Skip to content</a>
-<header class="site-header">
-  <nav class="site-nav" aria-label="Main navigation">
-    <div class="container nav-bar">
-      <a href="index.html" class="brand-link" aria-label="G. NOVA ARENA home">
-        <img src="assets/brand-mark.webp" alt="G. NOVA ARENA" width="640" height="219" fetchpriority="high" decoding="async">
-      </a>
-      <div class="desktop-nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="teams.html" aria-current="page" class="nav-link">Teams</a>
-        <a href="events.html" class="nav-link">Events</a>
-        <a href="#footer" class="nav-link">Contact Us</a>
-      </div>
-      <button id="mobile-menu-button" class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
-        <svg class="menu-icon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-        <svg class="close-icon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 6 12 12M6 18 18 6"></path>
-        </svg>
-      </button>
-    </div>
-    <div id="mobile-menu" class="hidden">
-      <div class="container mobile-nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="teams.html" aria-current="page" class="nav-link">Teams</a>
-        <a href="events.html" class="nav-link">Events</a>
-        <a href="#footer" class="nav-link">Contact Us</a>
-      </div>
-    </div>
-  </nav>
-</header>
-<!-- /site:header -->
+    <nav class=" w-full top-0 z-50 bg-white/0 fixed backdrop-blur-lg text-white py-2">
+        <div class="container mx-auto 2xl:max-w-[95%] px-4 flex justify-between items-center">
 
-    <main id="main-content" tabindex="-1">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="assets/G.NOVA_ARENA.png" alt="G.NOVA ARENA Logo" class="h-15 w-auto">
 
-    <section class="team-section content-section">
-        <div class="container">
-            <h1 class="page-title">Our Team</h1>
+            </a>
 
-            <div class="founders-grid mb-12">
-                <div class="founder-card">
-                    <div class="team-card">
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="index.html"
+                    class="nav-link relative hover:text-[#4DFF00] transition-colors after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[2px] after:bottom-[-2px] after:left-0 after:bg-[#4DFF00] after:origin-bottom-right after:transition-transform after:duration-250 after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left">Home</a>
+                <a href="teams.html"
+                    class="nav-link relative hover:text-[#4DFF00] transition-colors after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[2px] after:bottom-[-2px] after:left-0 after:bg-[#4DFF00] after:origin-bottom-right after:transition-transform after:duration-250 after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left">Teams</a>
+                <a href="events.html"
+                    class="nav-link relative hover:text-[#4DFF00] transition-colors after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[2px] after:bottom-[-2px] after:left-0 after:bg-[#4DFF00] after:origin-bottom-right after:transition-transform after:duration-250 after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left">Events</a>
+
+                <a href="#footer"
+                    class="nav-link relative hover:text-[#4DFF00] transition-colors after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[2px] after:bottom-[-2px] after:left-0 after:bg-[#4DFF00] after:origin-bottom-right after:transition-transform after:duration-250 after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left">Contact
+                    Us</a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden pt-4 pb-2">
+            <a href="index.html" class="block text-center py-2 px-4 transition-colors rounded">Home</a>
+            <a href="teams.html" class="block text-center py-2 px-4 transition-colors rounded">Teams</a>
+            <a href="events.html" class="block text-center py-2 px-4 transition-colors rounded">Events</a>
+           <a href="#footer" class="block text-center py-2 px-4 transition-colors rounded">Contact Us</a>
+        </div>
+    </nav>
+
+  <main>
+
+    <section class="team-page pt-20 pb-16">
+        <div class="container mx-auto 2xl:max-w-[95%] px-4">
+            <h1 class="text-4xl 2xl:text-7xl font-bold text-center text-white mb-10">Our Team</h1>
+
+            <div class="flex justify-center mb-12">
+                <div class="w-full max-w-xs sm:w-1/2 md:w-1/3 lg:w-1/4">
+                    <div class="bg-transparent rounded-lg  p-4 text-center flex flex-col h-full">
                         <div>
-                            <img width="340" height="350" src="assets/gunjan.webp" loading="lazy" decoding="async" alt="Gunjan"
-                                class="team-portrait">
-                            <h3 class="font-bold text-white mb-1">Gunjan Saha</h3>
-                            <p class="text-gray-400 font-semibold">Founder</p>
+                            <img src="assets/gunjan.png" alt="Gunjan"
+                                class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
+                            <h3 class="text-lg font-bold text-white mb-1">Gunjan Saha</h3>
+                            <p class="text-gray-400 text-sm font-semibold">Founder</p>
                         </div>
-                        <div class="team-socials">
-                            <a aria-label="Gunjan Saha on LinkedIn" href="https://www.linkedin.com/in/gunjansaha55?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bjb99GGZlQOOH%2BuTSHzN4Ww%3D%3D"
-                                target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white"><img width="900" height="900" decoding="async" src="assets/linkedin.png"
+                        <div class="flex justify-center space-x-3 mt-auto pt-4">
+                            <a href="https://www.linkedin.com/in/gunjansaha55?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bjb99GGZlQOOH%2BuTSHzN4Ww%3D%3D"
+                                target="_blank" class="text-gray-400 hover:text-white"><img src="assets/linkedin.png"
                                     alt="LinkedIn" class="h-5 w-5 hover:opacity-75 transition-opacity duration-300"></a>
-                            <a aria-label="Gunjan Saha on Instagram" href="https://instagram.com/gunjansaha55" target="_blank" rel="noopener noreferrer"
-                                class="text-gray-400 hover:text-white"><img width="1800" height="1800" decoding="async" src="assets/instagram.png" alt="Instagram"
+                            <a href="https://instagram.com/gunjansaha55" target="_blank"
+                                class="text-gray-400 hover:text-white"><img src="assets/instagram.png" alt="Instagram"
                                     class="h-5 w-5 hover:opacity-75 transition-opacity duration-300"></a>
-                        </div>                        
+                        </div>
                     </div>
                 </div>
 
-<div class="founder-card">
-                    <div class="team-card">
+
+
+
+<div class="w-full max-w-xs sm:w-1/2 md:w-1/3 lg:w-1/4">
+                    <div class="bg-transparent rounded-lg  p-4 text-center flex flex-col h-full">
                         <div>
-                            <img width="324" height="334" src="assets/dodo1.webp" loading="lazy" decoding="async" alt="Indrashis"
-                                class="team-portrait">
-                            <h3 class="font-bold text-white mb-1">Indrashis Roy</h3>
-                            <p class="text-gray-400 font-semibold">Co-Founder</p>
+                            <img src="assets/dodo1.png" alt="Indrashis"
+                                class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
+                            <h3 class="text-lg font-bold text-white mb-1">Indrashis Roy</h3>
+                            <p class="text-gray-400 text-sm font-semibold">Co-Founder</p>
                         </div>
-                        <div class="team-socials">
-                            <a aria-label="Indrashis Roy on LinkedIn" href="https://www.linkedin.com/in/indrashis-roy-b57393244/"
-                                target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white"><img width="900" height="900" decoding="async" src="assets/linkedin.png"
+                        <div class="flex justify-center space-x-3 mt-auto pt-4">
+                            <a href="https://www.linkedin.com/in/indrashis-roy-b57393244/"
+                                target="_blank" class="text-gray-400 hover:text-white"><img src="assets/linkedin.png"
                                     alt="LinkedIn" class="h-5 w-5 hover:opacity-75 transition-opacity duration-300"></a>
-                            <a aria-label="Indrashis Roy on Instagram" href="https://www.instagram.com/r_dodo_/" target="_blank" rel="noopener noreferrer"
-                                class="text-gray-400 hover:text-white"><img width="1800" height="1800" decoding="async" src="assets/instagram.png" alt="Instagram"
+                            <a href="https://www.instagram.com/r_dodo_/" target="_blank"
+                                class="text-gray-400 hover:text-white"><img src="assets/instagram.png" alt="Instagram"
                                     class="h-5 w-5 hover:opacity-75 transition-opacity duration-300"></a>
-                        </div>                        
+                        </div>
                     </div>
                 </div>
+
+
+
+
+
 
             </div>
 
-            <hr class="section-divider">
+
+
+
+
+
+
+
+
+            <hr class="border-white">
 
             <div class="pt-12">
-                <div class="team-grid">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
 
-                    <div class="team-card">
+
+
+                    <div class="bg-transparent rounded-lg p-4 text-center flex flex-col h-full">
                         <div>
-                            <img width="387" height="400" src="assets/diptanil.webp" loading="lazy" decoding="async" alt="Diptanil"
-                                class="team-portrait">
-                            <h3 class="font-bold text-white mb-1">Diptanil Sen</h3>
-                            <p class="text-gray-400">Content and Media Team</p>
+                            <img src="assets/diptanil.png" alt="Diptanil"
+                                class="w-24 h-24 rounded-2xl object-cover mx-auto mb-3">
+                            <h3 class="text-lg font-bold text-white mb-1">Diptanil Sen</h3>
+                            <p class="text-gray-400 text-sm">Content and Media Team</p>
                         </div>
-                        <div class="team-socials">
-                            <a aria-label="Diptanil Sen on LinkedIn" href="https://www.linkedin.com/in/diptanil-sen/"
-                                target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white"><img width="900" height="900" decoding="async" src="assets/linkedin.png"
+                        <div class="flex justify-center space-x-3 mt-auto pt-4">
+                            <a href="https://www.linkedin.com/in/diptanil-sen/"
+                                target="_blank" class="text-gray-400 hover:text-white"><img src="assets/linkedin.png"
                                     alt="LinkedIn" class="h-5 w-5 hover:opacity-75 transition-opacity duration-300"></a>
-                            <a aria-label="Diptanil Sen on Instagram" href="https://www.instagram.com/s.diptanil/"
-                                target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white"><img width="1800" height="1800" decoding="async" src="assets/instagram.png"
+                            <a href="https://www.instagram.com/s.diptanil/"
+                                target="_blank" class="text-gray-400 hover:text-white"><img src="assets/instagram.png"
                                     alt="Instagram"
                                     class="h-5 w-5 hover:opacity-75 transition-opacity duration-300"></a>
                         </div>
                     </div>
 
-                    <div class="team-card">
+
+
+
+
+
+                    <div class="bg-transparent rounded-lg p-4 text-center flex flex-col h-full">
                         <div>
-                            <img width="387" height="400" src="assets/hrithik.webp" loading="lazy" decoding="async" alt="Hrithik"
-                                class="team-portrait">
-                            <h3 class="font-bold text-white mb-1">Hrithik Nag</h3>
-                            <p class="text-gray-400">Content and Media Team</p>
+                            <img src="assets/hrithik.png" alt="Hrithik"
+                                class="w-24 h-24 rounded-2xl object-cover mx-auto mb-3">
+                            <h3 class="text-lg font-bold text-white mb-1">Hrithik Nag</h3>
+                            <p class="text-gray-400 text-sm">Content and Media Team</p>
                         </div>
-                        <div class="team-socials">
-                            <a aria-label="Hrithik Nag on Facebook" href="https://www.facebook.com/share/1A5cpn8kS2/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"
-                                class="text-gray-400 hover:text-white"><img width="1800" height="1800" decoding="async" src="assets/facebook.png" alt="Facebook"
+                        <div class="flex justify-center space-x-3 mt-auto pt-4">
+                            <a href="https://www.facebook.com/share/1A5cpn8kS2/?mibextid=wwXIfr" target="_blank"
+                                class="text-gray-400 hover:text-white"><img src="assets/facebook.png" alt="Facebook"
                                     class="h-5 w-5 hover:opacity-75 transition-opacity duration-300"></a>
-                            <a aria-label="Hrithik Nag on Instagram" href="https://www.instagram.com/hrithik.nag?utm_source=ig_web_button_share_sheet&igsh=MWRjNnFhY2x5YjIzcQ=="
-                                target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white"><img width="1800" height="1800" decoding="async" src="assets/instagram.png"
+                            <a href="https://www.instagram.com/hrithik.nag?utm_source=ig_web_button_share_sheet&igsh=MWRjNnFhY2x5YjIzcQ=="
+                                target="_blank" class="text-gray-400 hover:text-white"><img src="assets/instagram.png"
                                     alt="Instagram"
                                     class="h-5 w-5 hover:opacity-75 transition-opacity duration-300"></a>
                         </div>
                     </div>
 
-                    <div class="team-card">
-                        <div>
-                            <img width="387" height="400" src="assets/nabajit.webp" loading="lazy" decoding="async" alt="Nabajit"
-                                class="team-portrait">
-                            <h3 class="font-bold text-white mb-1">Nabajit Bhadury</h3>
-                            <p class="text-gray-400">Tech Team</p>
-                        </div>
-                        <div class="team-socials">
 
-                            <a aria-label="Nabajit Bhadury on LinkedIn" href="https://www.linkedin.com/in/nabajit-bhadury-5a123b24a/" target="_blank" rel="noopener noreferrer"
-                                class="text-gray-400 hover:text-white"><img width="900" height="900" decoding="async" src="assets/linkedin.png" alt="LinkedIn"
+
+
+                    <div class="bg-transparent rounded-lg p-4 text-center flex flex-col h-full">
+                        <div>
+                            <img src="assets/nabajit.png" alt="Nabajit"
+                                class="w-24 h-24 rounded-2xl object-cover mx-auto mb-3">
+                            <h3 class="text-lg font-bold text-white mb-1">Nabajit Bhadury</h3>
+                            <p class="text-gray-400 text-sm">Tech Team</p>
+                        </div>
+                        <div class="flex justify-center space-x-3 mt-auto pt-4">
+
+
+                            <a href="https://www.linkedin.com/in/nabajit-bhadury-5a123b24a/" target="_blank"
+                                class="text-gray-400 hover:text-white"><img src="assets/linkedin.png" alt="LinkedIn"
                                     class="h-5 w-5 hover:opacity-75 transition-opacity duration-300"></a>
 
-                            <a aria-label="Nabajit Bhadury on Instagram" href="https://www.instagram.com/dh__eu/" target="_blank" rel="noopener noreferrer"
-                                class="text-gray-400 hover:text-white"><img width="1800" height="1800" decoding="async" src="assets/instagram.png" alt="Instagram"
+
+                            <a href="https://www.instagram.com/dh__eu/" target="_blank"
+                                class="text-gray-400 hover:text-white"><img src="assets/instagram.png" alt="Instagram"
                                     class="h-5 w-5 hover:opacity-75 transition-opacity duration-300"></a>
                         </div>
                     </div>
 
-  <div class="team-card">
-                        <div>
-                            <img width="387" height="400" src="assets/anirban.webp" loading="lazy" decoding="async" alt="Anirban"
-                                class="team-portrait">
-                            <h3 class="font-bold text-white mb-1">Anirban Roy</h3>
-                            <p class="text-gray-400">Advisor</p>
-                        </div>
-                        <div class="team-socials">
 
-                            <a aria-label="Anirban Roy on LinkedIn" href="https://www.linkedin.com/in/roy-anirban/" target="_blank" rel="noopener noreferrer"
-                                class="text-gray-400 hover:text-white"><img width="900" height="900" decoding="async" src="assets/linkedin.png" alt="LinkedIn"
+
+
+
+
+  <div class="bg-transparent rounded-lg p-4 text-center flex flex-col h-full">
+                        <div>
+                            <img src="assets/anirban.png" alt="Anirban"
+                                class="w-24 h-24 rounded-2xl object-cover mx-auto mb-3">
+                            <h3 class="text-lg font-bold text-white mb-1">Anirban Roy</h3>
+                            <p class="text-gray-400 text-sm">Advisor</p>
+                        </div>
+                        <div class="flex justify-center space-x-3 mt-auto pt-4">
+
+
+                            <a href="https://www.linkedin.com/in/roy-anirban/" target="_blank"
+                                class="text-gray-400 hover:text-white"><img src="assets/linkedin.png" alt="LinkedIn"
                                     class="h-5 w-5 hover:opacity-75 transition-opacity duration-300"></a>
 
-                            <a aria-label="Anirban Roy on Instagram" href="https://www.instagram.com/i_a.nii/" target="_blank" rel="noopener noreferrer"
-                                class="text-gray-400 hover:text-white"><img width="1800" height="1800" decoding="async" src="assets/instagram.png" alt="Instagram"
+
+                            <a href="https://www.instagram.com/i_a.nii/" target="_blank"
+                                class="text-gray-400 hover:text-white"><img src="assets/instagram.png" alt="Instagram"
                                     class="h-5 w-5 hover:opacity-75 transition-opacity duration-300"></a>
                         </div>
                     </div>
 
- <div class="team-card">
-                        <div>
-                            <img width="387" height="400" src="assets/suvra.webp" loading="lazy" decoding="async" alt="Suvrakamal"
-                                class="team-portrait">
-                            <h3 class="font-bold text-white mb-1">Suvrakamal Das</h3>
-                            <p class="text-gray-400">Advisor</p>
-                        </div>
-                        <div class="team-socials">
 
-                            <a aria-label="Suvrakamal Das on LinkedIn" href="https://www.linkedin.com/in/suvrakamaldas/" target="_blank" rel="noopener noreferrer"
-                                class="text-gray-400 hover:text-white"><img width="900" height="900" decoding="async" src="assets/linkedin.png" alt="LinkedIn"
+
+
+
+
+ <div class="bg-transparent rounded-lg p-4 text-center flex flex-col h-full">
+                        <div>
+                            <img src="assets/suvra.png" alt="Suvrakamal"
+                                class="w-24 h-24 rounded-2xl object-cover mx-auto mb-3">
+                            <h3 class="text-lg font-bold text-white mb-1">Suvrakamal Das</h3>
+                            <p class="text-gray-400 text-sm">Advisor</p>
+                        </div>
+                        <div class="flex justify-center space-x-3 mt-auto pt-4">
+
+
+                            <a href="https://www.linkedin.com/in/suvrakamaldas/" target="_blank"
+                                class="text-gray-400 hover:text-white"><img src="assets/linkedin.png" alt="LinkedIn"
                                     class="h-5 w-5 hover:opacity-75 transition-opacity duration-300"></a>
 
-                            <a aria-label="Suvrakamal Das on Instagram" href="https://www.instagram.com/subhros_story/" target="_blank" rel="noopener noreferrer"
-                                class="text-gray-400 hover:text-white"><img width="1800" height="1800" decoding="async" src="assets/instagram.png" alt="Instagram"
+
+                            <a href="https://www.instagram.com/subhros_story/" target="_blank"
+                                class="text-gray-400 hover:text-white"><img src="assets/instagram.png" alt="Instagram"
                                     class="h-5 w-5 hover:opacity-75 transition-opacity duration-300"></a>
                         </div>
                     </div>
 
-                    <div class="team-card">
-                        <div>
-                            <img width="387" height="400" src="assets/sukrit.webp" loading="lazy" decoding="async" alt="Sukrit"
-                                class="team-portrait">
-                            <h3 class="font-bold text-white mb-1">Sukrit Deb</h3>
-                            <p class="text-gray-400">Designing Team</p>
-                        </div>
-                        <div class="team-socials">
 
-                            <a aria-label="Sukrit Deb on LinkedIn" href="https://www.linkedin.com/in/sukritdeb?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bu1AWn1M2ST6uaIW4ZYq4sw%3D%3D"
-                                target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white"><img width="900" height="900" decoding="async" src="assets/linkedin.png"
+
+
+
+
+
+
+
+
+
+                    <div class="bg-transparent rounded-lg p-4 text-center flex flex-col h-full">
+                        <div>
+                            <img src="assets/sukrit.png" alt="Sukrit"
+                                class="w-24 h-24 rounded-2xl object-cover mx-auto mb-3">
+                            <h3 class="text-lg font-bold text-white mb-1">Sukrit Deb</h3>
+                            <p class="text-gray-400 text-sm">Designing Team</p>
+                        </div>
+                        <div class="flex justify-center space-x-3 mt-auto pt-4">
+
+                            <a href="https://www.linkedin.com/in/sukritdeb?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bu1AWn1M2ST6uaIW4ZYq4sw%3D%3D"
+                                target="_blank" class="text-gray-400 hover:text-white"><img src="assets/linkedin.png"
                                     alt="LinkedIn" class="h-5 w-5 hover:opacity-75 transition-opacity duration-300"></a>
 
-                            <a aria-label="Sukrit Deb on Instagram" href="https://www.instagram.com/krit_xd007?utm_source=ig_web_button_share_sheet&igsh=MXBkN2V2ejU4d2c3Yw=="
-                                target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white"><img width="1800" height="1800" decoding="async" src="assets/instagram.png"
+
+                            <a href="https://www.instagram.com/krit_xd007?utm_source=ig_web_button_share_sheet&igsh=MXBkN2V2ejU4d2c3Yw=="
+                                target="_blank" class="text-gray-400 hover:text-white"><img src="assets/instagram.png"
                                     alt="Instagram"
                                     class="h-5 w-5 hover:opacity-75 transition-opacity duration-300"></a>
                         </div>
@@ -221,98 +276,155 @@
         </div>
     </section>
 
-     </main>
+   </main>
 
-    <!-- site:footer -->
-<footer id="footer" class="site-footer" aria-label="Site footer">
-    <div class="container">
-      <div class="footer-brand">
-        <div>
-          <a href="index.html" class="brand-link" aria-label="G. NOVA ARENA home">
-            <img src="assets/brand-mark.webp" alt="G. NOVA ARENA" width="640" height="219" decoding="async">
+  <footer id="footer" class="bg-transparent text-gray-400 font-['Zen_Dots',_sans-serif]">
+    <div class="container mx-auto 2xl:max-w-[95%] px-6 py-12">
+
+      <div class="flex flex-col sm:flex-row justify-between items-center pb-8">
+        <div class="mb-6 sm:mb-0">
+          <a href="#">
+            <img src="assets/G.NOVA_ARENA.png" alt="G.NOVA ARENA Logo" class="h-10 transform translate-y-8">
           </a>
+
+
         </div>
+
       </div>
-      <hr class="section-divider">
-      <div class="footer-grid">
+
+      <hr class="border-white">
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 py-12 text-center md:text-left">
         <div>
-          <h3>CONTACT US</h3>
-          <p>Bhadreswar, Hooghly, West Bengal, India, 712-124</p>
+          <h3 class="text-white text-sm font-semibold mb-4">CONTACT US</h3>
+          <p class="mb-2 text-xs">Bhadreswar, Hooghly, West Bengal, India, 712-124</p>
+
           <a href="mailto:contact@gnovaarena.in"
-            class="footer-email">contact@gnovaarena.in</a>
+            class="block hover:text-white transition-colors text-xs duration-300">contact@gnovaarena.in</a>
         </div>
-        <div>
-          <h3>QUICK CONTACT</h3>
+
+        <div class="md:col-span-1">
+          <h3 class="text-white text-sm font-semibold mb-4">QUICK CONTACT</h3>
           <ul>
-            <li>
+            <li class="mb-2">
               <a href="https://wa.me/917980517312" target="_blank" rel="noopener noreferrer"
-                class="contact-link">
-                <img src="assets/wp.png" alt="WhatsApp" width="24" height="24" decoding="async">
-                <span>+91 7980 517312</span>
+                class="flex items-center justify-center md:justify-start hover:text-white transition-colors duration-300">
+                <img src="assets/wp.png" alt="WhatsApp" class="h-5 w-5 mr-3">
+                <span class="text-xs">+91 7980 517312</span>
               </a>
             </li>
-            <li>
+            <li class="mb-2">
               <a href="https://t.me/+917980517312" target="_blank" rel="noopener noreferrer"
-                class="contact-link">
-                <img src="assets/telegram.png" alt="Telegram" width="24" height="24" decoding="async">
-                <span>+91 7980 517312</span>
+                class="flex items-center justify-center md:justify-start hover:text-white transition-colors duration-300">
+                <img src="assets/telegram.png" alt="Telegram" class="h-5 w-5 mr-3">
+                <span class="text-xs">+91 7980 517312</span>
               </a>
             </li>
           </ul>
         </div>
-        <div>
-          <h3>ORGANIZATION</h3>
+
+
+        <div class="md:col-span-1">
+          <h3 class="text-white text-sm font-semibold mb-4">ORGANIZATION</h3>
           <ul>
-            <li><a href="terms.html">Terms
+            <li class="mb-2"><a href="terms.html" class="text-xs hover:text-white transition-colors duration-300">Terms
                 and Conditions</a></li>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="disclaimer.html">Disclaimer</a></li>
-            <li><a href="refund.html">Refund/Cancellation Policy</a></li>
-            <li><a href="conduct.html">Code
+            <li class="mb-2"><a href="privacy.html"
+                class="text-xs hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+            <li class="mb-2"><a href="disclaimer.html"
+                class="text-xs hover:text-white transition-colors duration-300">Disclaimer</a></li>
+            <li class="mb-2"><a href="refund.html"
+                class="text-xs hover:text-white transition-colors duration-300">Refund/Cancellation Policy</a></li>
+            <li class="mb-2"><a href="conduct.html" class="text-xs hover:text-white transition-colors duration-300">Code
                 of Conduct</a></li>
           </ul>
         </div>
+
+
+
         <div>
-          <h3>SOCIALS</h3>
-          <div class="social-links">
-            <a href="https://www.instagram.com/g.novaarena/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer"
-              class="icon-link">
-              <img src="assets/instagram.png" alt="Instagram" width="24" height="24" decoding="async">
+          <h3 class="text-white text-sm font-semibold mb-4">SOCIALS</h3>
+          <div class="flex justify-center md:justify-start space-x-4">
+
+
+            <a href="https://www.instagram.com/g.novaarena/?utm_source=ig_web_button_share_sheet" target="_blank"
+              class="hover:opacity-75 transition-opacity duration-300">
+              <img src="assets/instagram.png" alt="Instagram" class="h-5 w-5">
             </a>
-            <a href="https://www.linkedin.com/company/gnovaarena/" target="_blank" rel="noopener noreferrer"
-              class="icon-link">
-              <img src="assets/linkedin.png" alt="LinkedIn" width="24" height="24" decoding="async">
+
+            <a href="https://www.linkedin.com/company/gnovaarena/" target="_blank"
+              class="hover:opacity-75 transition-opacity duration-300">
+              <img src="assets/linkedin.png" alt="LinkedIn" class="h-5 w-5">
             </a>
-            <a href="https://youtube.com/@g.novaarena?si=4Sr3jU4FtfjM6qt2" target="_blank" rel="noopener noreferrer"
-              class="icon-link">
-              <img src="assets/youtube.png" alt="YouTube" width="24" height="24" decoding="async">
+
+
+            <a href="https://youtube.com/@g.novaarena?si=4Sr3jU4FtfjM6qt2" target="_blank"
+              class="hover:opacity-75 transition-opacity duration-300">
+              <img src="assets/youtube.png" alt="YouTube" class="h-5 w-5">
             </a>
-            <a href="https://x.com/gnovaarena?s=21&t=_wX8kYIrkqsRGxGt5Y2UAg" target="_blank" rel="noopener noreferrer"
-              class="icon-link">
-              <img src="assets/twitter.png" alt="Twitter" width="24" height="24" decoding="async">
+
+
+            <a href="https://x.com/gnovaarena?s=21&t=_wX8kYIrkqsRGxGt5Y2UAg" target="_blank"
+              class="hover:opacity-75 transition-opacity duration-300">
+              <img src="assets/twitter.png" alt="Twitter" class="h-5 w-5">
             </a>
- <a href="https://chat.whatsapp.com/Jr1RPhBswi29LIhfR3Roy8?mode=ac_c" target="_blank" rel="noopener noreferrer"
-              class="icon-link">
-              <img src="assets/wp.png" alt="WhatsApp" width="24" height="24" decoding="async">
+
+
+ <a href="https://chat.whatsapp.com/Jr1RPhBswi29LIhfR3Roy8?mode=ac_c" target="_blank"
+              class="hover:opacity-75 transition-opacity duration-300">
+              <img src="assets/wp.png" alt="WhatsApp" class="h-5 w-5">
             </a>
-<a href="https://www.facebook.com/share/1UE3PzBA6N/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"
-              class="icon-link">
-              <img src="assets/facebook.png" alt="Facebook" width="24" height="24" decoding="async">
+
+
+<a href="https://www.facebook.com/share/1UE3PzBA6N/?mibextid=wwXIfr" target="_blank"
+              class="hover:opacity-75 transition-opacity duration-300">
+              <img src="assets/facebook.png" alt="Facebook" class="h-5 w-5">
             </a>
-            <a href="https://discord.gg/NGn4vPzpw9" target="_blank" rel="noopener noreferrer"
-              class="icon-link">
-              <img src="assets/discord.png" alt="Discord" width="24" height="24" decoding="async">
+
+            <a href="https://discord.gg/NGn4vPzpw9" target="_blank"
+              class="hover:opacity-75 transition-opacity duration-300">
+              <img src="assets/discord.png" alt="Discord" class="h-5 w-5">
             </a>
+
+
+
+
+
+
           </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
-      <hr class="section-divider">
-      <div class="footer-copyright">
-        <p>&copy; <span data-current-year>2026</span> G. NOVA ARENA. All Rights Reserved.</p>
+
+      <hr class="border-white">
+
+      <div class="flex flex-col sm:flex-row justify-between items-center pt-8">
+        <p class="text-xs mb-4 sm:mb-0">&copy; 2025 G. NOVA ARENA. All Rights Reserved.</p>
+
       </div>
+
     </div>
   </footer>
-<!-- /site:footer -->
 
 
     <script src="./site.js" defer></script>
