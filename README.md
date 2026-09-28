@@ -23,7 +23,7 @@ Edit shared HTML in `components/`, then run `pnpm run sync:layout`. The build al
 
 Zen Dots is the display face; Rajdhani is the body face. Fluid sizes are capped on large displays. Team and footer columns use container queries, so they respond to their available space and enlarged text. Navigation changes at 768px, and home feature rows change at 1024px. Content remains in normal document flow, with short-page footers at the viewport bottom.
 
-The WebP assets are optimized derivatives of the original PNGs, which are retained. Image dimensions reserve layout space; below-the-fold artwork and videos load lazily.
+The assets directory contains only images used by the site: optimized WebP artwork and portraits, plus PNG social icons. Unused originals and duplicate assets have been removed. Image dimensions reserve layout space; below-the-fold artwork and videos load lazily.
 
 ## Build and verification
 
